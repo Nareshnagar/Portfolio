@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name - education, skills, certifications, internships and experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="portfolio-layout">
+    <aside class="profile-sidebar" aria-label="Profile">
+      <div class="profile-heading">
+        <img class="profile-photo" id="profile-photo" alt="Profile photo" />
+        <h1 id="profile-name">Naresh Nagar</h1>
+        <p class="profile-role"><span id="typed"></span><span class="cursor">|</span></p>
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-contact">
+        <a class="sidebar-item" id="sidebar-email">
+          <small>Email</small>
+          <span id="sidebar-email-value"></span>
+        </a>
+        <a class="sidebar-item" id="sidebar-phone">
+          <small>Phone</small>
+          <span id="sidebar-phone-value"></span>
+        </a>
+        <div class="sidebar-item">
+          <small>Location</small>
+          <span id="sidebar-location"></span>
+        </div>
+      </div>
+      <div class="socials" id="socials" aria-label="Social profiles"></div>
+    </aside>
+
+    <div class="content-panel">
+      <header class="navbar" id="navbar">
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">☀️</button>
+          <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </header>
+
+      <main>
+        <section id="about" class="section">
+          <h2 class="section-title reveal">About Me</h2>
+          <p id="about-text" class="about-copy reveal"></p>
+        </section>
+
+        <section id="skills" class="section">
+          <h2 class="section-title reveal">Skills</h2>
+          <div class="filter-bar" id="skill-filters"></div>
+          <div class="skills-grid" id="skills-grid"></div>
+        </section>
+
+        <section id="education" class="section">
+          <h2 class="section-title reveal">Education</h2>
+          <div class="timeline" id="education-timeline"></div>
+        </section>
+
+        <section id="experience" class="section">
+          <h2 class="section-title reveal">Projects &amp; Experience</h2>
+          <div class="filter-bar" id="exp-filters"></div>
+          <div class="timeline" id="experience-timeline"></div>
+        </section>
+
+        <section id="certifications" class="section">
+          <h2 class="section-title reveal">Certifications</h2>
+          <div class="cards-grid" id="cert-grid"></div>
+        </section>
+
+        <section id="learning" class="section">
+          <h2 class="section-title reveal">Currently Learning</h2>
+          <div class="cards-grid" id="learning-grid"></div>
+        </section>
+
+        <section id="contact" class="section">
+          <h2 class="section-title reveal">Get In Touch</h2>
+          <div class="contact-wrap reveal">
+            <div class="contact-info" id="contact-info"></div>
+            <form id="contact-form" class="contact-form">
+              <input type="text" id="c-name" placeholder="Your name" required />
+              <input type="email" id="c-email" placeholder="Your email" required />
+              <textarea id="c-message" rows="5" placeholder="Your message" required></textarea>
+              <button type="submit" class="btn primary">Send Message</button>
+              <p class="form-note" id="form-note"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> <span id="footer-name">Naresh Nagar</span>. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+
+  <button id="to-top" class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
