@@ -76,7 +76,7 @@ const DATA = {
     { title: "Red Hat Certified System Administrator (RHCSA)", issuer: "Red Hat", date: "11 Dec 2025", logo: "https://cdn.simpleicons.org/redhat", logoText: "Red Hat", url: "RHCSA.pdf" },
     { title: "AWS", issuer: "simplilearn", date: "7 Oct 2025", logoText: "simplilearn", url: "aws_certificate.pdf" },
     { title:"Achievement", issuer: "Makhanlal Chaturvedi National University of Journalism and communication", date: "18 Aug 2026", logo: "https://cdn.simpleicons.org/freecodecamp", logoText: "MCU", url: "mcu_certificate.pdf" },
-    { title: "Introduction to Cloud Computing", issuer: "NPTEL", date: "Nov 2024", logoText: "NPTEL", url: "#" },
+    // { title: "Introduction to Cloud Computing", issuer: "NPTEL", date: "Nov 2024", logoText: "NPTEL", url: "#" },
   ],
 
   // type: "internship" | "job" | "freelance" | "project"
